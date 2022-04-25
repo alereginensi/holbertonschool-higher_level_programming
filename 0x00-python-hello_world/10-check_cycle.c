@@ -8,13 +8,27 @@
 
 int check_cycle(listint_t *list)
 {
-	if (list == 0)
+	listint_t *shorter = list;
+	listint_t *longer = list;
+
+	if (!list)
 	{
 		return (0);
 	}
-	/**else
+	while (1)
 	{
-		return (1);
-	}*/
-	return (0);
+		if (longer->next != NULL && longer->next->next != NULL)
+		{
+			longer = longer->next->next;
+			shorter = shorter->next;
+		if (longer == shorter)
+		{
+			return (1);
+		}
+		}
+		else
+		{
+			return (0);
+		}
+	}
 }
