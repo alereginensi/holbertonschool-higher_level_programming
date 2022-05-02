@@ -11,13 +11,13 @@ int is_palindrome(listint_t **head)
 	{
 		if ((*head)->next != NULL)
 		{
-			return(0);
+			return (0);
 		}
 		else
 		{
-			return(1);
+			return (1);
 			*head = (*head)->next;
 		}
 	}
-	return(0);
+	return (0);
 }
