@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    if not idx in my_list:
+    if idx not in my_list:
         return(None)
     elif idx < 0:
         return(None)
