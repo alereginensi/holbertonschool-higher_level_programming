@@ -20,5 +20,5 @@ int is_palindrome(listint_t **head)
 			*head = (*head)->next;
 		}
 	}
-	return(0);
+	return(1);
 }
