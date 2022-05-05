@@ -8,4 +8,3 @@ def weight_average(my_list=[]):
         suma += x[0] * x[1]
         div += x[1]
     return suma / div
-
