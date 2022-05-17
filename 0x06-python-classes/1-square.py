@@ -7,4 +7,4 @@ class Square:
     '''create class square'''
     def __init__(self, size):
         '''define size'''
-        self._protected_member = size
+        self.__size = size
