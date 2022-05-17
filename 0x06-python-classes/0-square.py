@@ -3,4 +3,5 @@
 # Class Square that defines a square:
 
 class Square(object):
+    # Empty class
     pass
