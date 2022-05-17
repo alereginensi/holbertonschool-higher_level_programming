@@ -4,4 +4,6 @@
 
 class Square:
     # create an Empty class
-    pass
+    def __init__(self):
+        # defines init
+        pass
