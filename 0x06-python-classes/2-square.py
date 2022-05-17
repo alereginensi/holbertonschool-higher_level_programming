@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
-# class Square that defines a square by: (based on 1-square.py)
+'''class Square that defines a square by: (based on 1-square.py)'''
+
 
 class Square:
+    '''creating class square'''
     def __init__(self, size=0):
+        '''defining size'''
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
