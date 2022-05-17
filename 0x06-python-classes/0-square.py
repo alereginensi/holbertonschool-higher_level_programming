@@ -3,5 +3,5 @@
 # Class Square that defines a square:
 
 class Square:
-    # Empty class
+    # create an Empty class
     pass
