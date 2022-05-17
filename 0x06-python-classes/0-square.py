@@ -2,6 +2,6 @@
 
 # Class Square that defines a square:
 
-class Square(object):
+class Square:
     # Empty class
     pass
