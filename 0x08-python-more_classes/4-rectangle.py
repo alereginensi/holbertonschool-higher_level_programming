@@ -66,3 +66,7 @@ class Rectangle:
                 string = string + '\n'
             string = string[:-1]
         return string
+
+    def __repr__(self):
+        '''return a string representation of the rectangle'''
+        return f"Rectangle({self.__width},{self.__height})"
