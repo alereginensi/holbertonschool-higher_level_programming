@@ -6,14 +6,13 @@
 class Rectangle:
     '''creating class rectangle'''
     number_of_instances = 0
-    print_symbol = '#'
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         ''' init of height and width'''
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
-        Rectangle.print_symbol += '#'
 
     @property
     def width(self):
@@ -62,12 +61,13 @@ class Rectangle:
     def __str__(self, height=0, width=0):
         '''print rectangle with the character #'''
         string = ""
+        symbol = str(self.print_symbol)
         if self.__height == 0 or self.__width == 0:
             return str()
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    string = string + '#'
+                    string = string + symbol
                 string = string + '\n'
             string = string[:-1]
         return string
