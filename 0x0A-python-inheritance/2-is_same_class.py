@@ -5,7 +5,7 @@
 
 def is_same_class(obj, a_class):
     '''define is_same_class'''
-    if isinstance(is_same_class, a_class):
+    if type(obj) is a_class:
         return True
     else:
         return False
