@@ -5,5 +5,4 @@
 
 def lookup(obj):
     '''defines lookup class'''
-    o = obj()
-    return list(dir(o))
+    return dir(obj)
