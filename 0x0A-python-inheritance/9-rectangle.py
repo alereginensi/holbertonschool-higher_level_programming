@@ -29,7 +29,6 @@ class Rectangle(BaseGeometry):
         else:
             return f"[Rectangle] {self.__width}/{self.__height}"
 
-
     def integer_validator(self, name, value):
         if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
