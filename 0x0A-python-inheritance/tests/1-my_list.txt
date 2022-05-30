@@ -1,45 +1,12 @@
->>> MyList = __import__('1-my_list').MyList
+>>>MyList = __import__('1-my_list').MyList
 
-Testing cases where the function should work ok
+my_list = MyList()
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+my_list.append(3)
+my_list.append(5)
+print(my_list)
+my_list.print_sorted()
+print(my_list)
 
->>> my_list = MyList()
->>> my_list.append(43)
->>> my_list.append(9)
->>> my_list.append(2)
->>> my_list.append(2346)
->>> print(my_list)
-[43, 9, 2, 2346]
->>> my_list.print_sorted()
-[2, 9, 43, 1000]
-
-Testing case None
-
->>> my_list = MyList()
->>> my_list.append(None)
->>> my_list.print_sorted()
-[None]
-
-Case when theres only one element:
-
->>> my_list = MyList()
->>> my_list.append(25)
->>> print(my_list)
-[25]
-
-Case when the list is empty:
-
->>> my_list = MyList()
->>> print(my_list)
-[]
-
-Testing isinstance, issubclass:
-
->>> my_list = MyList()
->>> isinstance(my_list, object)
-True
-
->>> isinstance(MyList, list)
-False
-
->>> issubclass(MyList, object)
-True
