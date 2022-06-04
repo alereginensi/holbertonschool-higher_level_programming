@@ -86,13 +86,34 @@ class Rectangle(Base):
     def display(self):
         '''defining print square'''
         if self.__width != 0 and self.__height != 0:
+            for y_space in range(self.__y):
+                z = ' '
+                print(z)
             for num in range(self.__height):
+                for x_space in range(self.__x):
+                    z = ' '
+                    print((z), end="")
                 for space in range(self.__width):
                     print('#', end="")
                 print()
-        else:
-            print()
 
     def __str__(self):
         '''returns Rectangle properties'''
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+
+    def update(self, *args):
+        '''defining update'''
+        if args is not None:
+            arg_num = 0
+            for j in args:
+                if arg_num == 0:
+                    self.id = j
+                if arg_num == 1:
+                    self.width = j
+                if arg_num == 2:
+                    self.height = j
+                if arg_num == 3:
+                    self.x = j
+                if arg_num == 4:
+                    self.y = j
+                arg_num += 1
