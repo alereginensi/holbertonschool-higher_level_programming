@@ -85,17 +85,14 @@ class Rectangle(Base):
 
     def display(self):
         '''defining print square'''
-        if self.__width != 0 and self.__height != 0:
-            for y_space in range(self.__y):
-                z = ' '
-                print(z)
-            for num in range(self.__height):
-                for x_space in range(self.__x):
-                    z = ' '
-                    print((z), end="")
-                for space in range(self.__width):
-                    print('#', end="")
-                print()
+        for y_space in range(self.__y):
+            print()
+        for num in range(self.__height):
+            for x_space in range(self.__x):
+                print(' ', end="")
+            for space in range(self.__width):
+                print('#', end="")
+            print()
 
     def __str__(self):
         '''returns Rectangle properties'''
@@ -130,3 +127,12 @@ class Rectangle(Base):
                     self.x = value
                 if key == "y":
                     self.y = value
+
+    def to_dictionary(self):
+        '''return dictionary representation of rectangle'''
+        dictio = {}
+        attrs = ["id", "width", "height", "x", "y"]
+
+        for j in attrs:
+            dictio[j] = getattr(self, j)
+        return dictio
