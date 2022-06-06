@@ -19,7 +19,7 @@ class TestBase(unittest.TestCase):
 
         self.assertIsNotNone(id)
         self.assertEqual(b2.id, 2)
-        self.assertEqual(b3.id, 4)
+        self.assertEqual(b3.id, 3)
 
 if __name__ == '__main__':
     unittest.main()
