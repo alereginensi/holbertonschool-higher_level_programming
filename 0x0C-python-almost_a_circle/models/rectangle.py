@@ -99,7 +99,8 @@ class Rectangle(Base):
 
     def __str__(self):
         '''returns Rectangle properties'''
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return f"[Rectangle] ({self.id}) \
+{self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
         '''defining update'''
