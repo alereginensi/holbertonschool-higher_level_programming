@@ -3,4 +3,4 @@
 CREATE TABLE IF NOT EXISTS unique_id(
 	id INT,
 	name VARCHAR(256));
-INSERT UNIQUE INTO first_table (id) (1);
+INSERT INTO first_table (id) UNIQUE VALUES (1);
