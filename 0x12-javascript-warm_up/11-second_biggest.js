@@ -7,7 +7,9 @@ const newArray = [];
 for (let i = 2; i < array.length; i++) {
   newArray[i - 2] = parseInt(array[i]);
 }
-if (array.length < 4) {
+if (array.length === 2) {
+  console.log(0);
+} else if (array.length === 3) {
   console.log(0);
 } else {
   newArray.sort();
