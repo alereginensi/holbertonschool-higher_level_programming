@@ -10,6 +10,6 @@ axios
   .then(res => {
     console.log(`code: ${res.status}`);
   })
-  .catch(() => {
+  .catch(error => {
     console.log('code: ${error.response.status}');
   });
