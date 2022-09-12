@@ -6,9 +6,9 @@
 const axios = require('axios');
 
 axios.get(process.argv[2])
-  .then(res => {
-    console.log(`code: ${res.status}`);
+  .then(response => {
+    console.log(`code: ${response.status}`);
   })
   .catch(error => {
-    console.log(`code: ${error.res.status}`);
+    console.log(`code: ${error.response.status}`);
   });
