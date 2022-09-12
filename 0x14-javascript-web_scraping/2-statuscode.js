@@ -11,5 +11,5 @@ axios
     console.log(`code: ${res.status}`);
   })
   .catch(() => {
-    console.error('code: 404');
+    console.log('code: ${error.response.status}');
   });
