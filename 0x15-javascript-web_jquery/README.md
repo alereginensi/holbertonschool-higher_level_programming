@@ -102,3 +102,14 @@ Write a JavaScript script that fetches from `https://fourtonfish.com/hellosalut/
 * You must use the JQuery API
 * Your script must work when it is imported from the <head> tag
 * Test with [`9-main.html`](./tests/9-main.html) in your browser
+
+## Advanced Tasks
+
+### :white_check_mark: 10. No jQuery - document loaded
+Write a JavaScript script that updates the text color of the <header> element to red (`#FF0000`):
+* You must use `document.querySelector` to select the HTML tag
+* You can’t use the jQuery API
+* Note: Your script must be imported from the `<head>` tag, not at the end of the HTML
+* Test with [`100-main.html`](./tests/100-main.html) in your browser
+
+File(s): [`100-script.js`](./100-script.js)
